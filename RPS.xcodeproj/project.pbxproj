@@ -13,6 +13,8 @@
 		EE26779B1A98CCB700482F98 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE26779A1A98CCB700482F98 /* Images.xcassets */; };
 		EE26779E1A98CCB700482F98 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE26779C1A98CCB700482F98 /* LaunchScreen.xib */; };
 		EE2677AA1A98CCB800482F98 /* RPSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2677A91A98CCB800482F98 /* RPSTests.swift */; };
+		EE2677EA1A98E80900482F98 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2677E91A98E80900482F98 /* BlueViewController.swift */; };
+		EE3DA63C1A9A2FC500D6A0DE /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DA63B1A9A2FC500D6A0DE /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		EE2677A31A98CCB700482F98 /* RPSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE2677A81A98CCB800482F98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE2677A91A98CCB800482F98 /* RPSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPSTests.swift; sourceTree = "<group>"; };
+		EE2677E91A98E80900482F98 /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		EE3DA63B1A9A2FC500D6A0DE /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +83,12 @@
 			children = (
 				EE2677931A98CCB700482F98 /* AppDelegate.swift */,
 				EE2677951A98CCB700482F98 /* ViewController.swift */,
+				EE3DA63B1A9A2FC500D6A0DE /* Game.swift */,
 				EE2677971A98CCB700482F98 /* Main.storyboard */,
 				EE26779A1A98CCB700482F98 /* Images.xcassets */,
 				EE26779C1A98CCB700482F98 /* LaunchScreen.xib */,
 				EE2677911A98CCB700482F98 /* Supporting Files */,
+				EE2677E91A98E80900482F98 /* BlueViewController.swift */,
 			);
 			path = RPS;
 			sourceTree = "<group>";
@@ -214,6 +220,8 @@
 			files = (
 				EE2677961A98CCB700482F98 /* ViewController.swift in Sources */,
 				EE2677941A98CCB700482F98 /* AppDelegate.swift in Sources */,
+				EE2677EA1A98E80900482F98 /* BlueViewController.swift in Sources */,
+				EE3DA63C1A9A2FC500D6A0DE /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +415,7 @@
 				EE2677AF1A98CCB800482F98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE2677B01A98CCB800482F98 /* Build configuration list for PBXNativeTarget "RPSTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +424,7 @@
 				EE2677B21A98CCB800482F98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
