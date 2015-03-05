@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BF5DC756-B591-4C67-AC38-4F77414F79DE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RPS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>146B7FA4503EC999EDAC40742F0DBE652BB5455D</key>
+		<string>https://github.com/omatveyuk/RSP-Swift-Homework.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RPS.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>146B7FA4503EC999EDAC40742F0DBE652BB5455D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/omatveyuk/RSP-Swift-Homework.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>146B7FA4503EC999EDAC40742F0DBE652BB5455D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>146B7FA4503EC999EDAC40742F0DBE652BB5455D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RPS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

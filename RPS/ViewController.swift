@@ -66,7 +66,8 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "History", style: UIBarButtonItemStyle.Plain, target: self, action: "pop")
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -74,6 +75,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func pop()
+    {
+        let historyViewController = self.storyboard?.instantiateViewControllerWithIdentifier("History") as HistoryViewController
+        
+        self.navigationController?.pushViewController(historyViewController, animated: true)
+        // self.navigationController!.popToViewController(self, animated: true)
+    }
 
 }
 
