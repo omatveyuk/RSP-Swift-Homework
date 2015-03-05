@@ -11,31 +11,35 @@ import UIKit
 class ViewController: UIViewController {
     
     var match:RPSMatch = RPSMatch()
-
+    var scores:[RPSMatch] = []
     
     @IBAction func ButtonClicked(sender: UIButton) {
         var pm: RPS = RPS.Rock
-        // var om: RPS = RPS()
+        var om: RPS = RPS()
         
         // var match:RPSMatch = RPSMatch(_pmove:pm, _omove:om)
         // assignment says that The second view controller should randomly select a move for the app
         //match.opponentMove = om;
         match.playerMove = pm;
+        match.opponentMove = om
+        
+        scores.append(match)
         
         performSegueWithIdentifier("ABCDE", sender: self)
     }
     
     @IBAction func Button2Clicked(sender: UIButton) {
         var pm: RPS = RPS.Scissors
-        //var om: RPS = RPS()
+        var om: RPS = RPS()
         
         let blueViewController = self.storyboard!.instantiateViewControllerWithIdentifier("XYZ") as BlueViewController
         // assignment says that The second view controller should randomly select a move for the app
         //match.opponentMove = om;
-        match.playerMove = pm;
+        match.playerMove = pm
+        match.opponentMove = om
         
         blueViewController.match = match
-        
+        match.playerMove = pm;
         presentViewController(blueViewController, animated: true, completion: nil)
     }
     
@@ -52,16 +56,18 @@ class ViewController: UIViewController {
         if (segue.identifier == "@destination")
         {
             var pm: RPS = RPS.Paper
+            var om: RPS = RPS()
+            
+            match.playerMove = pm;
+            match.opponentMove = om
+           
             // assignment says that The second view controller should randomly select a move for the app
             //var om: RPS = RPS()
             // match.opponentMove = om;
-            match.playerMove = pm;
+            
             
             var blueViewController = segue.destinationViewController as BlueViewController
             blueViewController.match = match
-
-
-            
         }
     }
     override func viewDidLoad() {
@@ -80,6 +86,7 @@ class ViewController: UIViewController {
         let historyViewController = self.storyboard?.instantiateViewControllerWithIdentifier("History") as HistoryViewController
         
         self.navigationController?.pushViewController(historyViewController, animated: true)
+        historyViewController.scores = self.scores;
         // self.navigationController!.popToViewController(self, animated: true)
     }
 

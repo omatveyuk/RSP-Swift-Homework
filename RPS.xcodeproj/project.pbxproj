@@ -16,6 +16,7 @@
 		EE2677EA1A98E80900482F98 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2677E91A98E80900482F98 /* BlueViewController.swift */; };
 		EE3DA63C1A9A2FC500D6A0DE /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DA63B1A9A2FC500D6A0DE /* Game.swift */; };
 		EEC145AD1AA9038100E94E87 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC145AC1AA9038100E94E87 /* HistoryViewController.swift */; };
+		EEC145AF1AA9166A00E94E87 /* ColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC145AE1AA9166A00E94E87 /* ColorTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		EE2677E91A98E80900482F98 /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
 		EE3DA63B1A9A2FC500D6A0DE /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		EEC145AC1AA9038100E94E87 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		EEC145AE1AA9166A00E94E87 /* ColorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorTableViewCell.swift; path = ../ColorTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		EE2677901A98CCB700482F98 /* RPS */ = {
 			isa = PBXGroup;
 			children = (
+				EEC145AE1AA9166A00E94E87 /* ColorTableViewCell.swift */,
 				EE2677931A98CCB700482F98 /* AppDelegate.swift */,
 				EE2677951A98CCB700482F98 /* ViewController.swift */,
 				EE3DA63B1A9A2FC500D6A0DE /* Game.swift */,
@@ -226,6 +229,7 @@
 				EE2677EA1A98E80900482F98 /* BlueViewController.swift in Sources */,
 				EEC145AD1AA9038100E94E87 /* HistoryViewController.swift in Sources */,
 				EE3DA63C1A9A2FC500D6A0DE /* Game.swift in Sources */,
+				EEC145AF1AA9166A00E94E87 /* ColorTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

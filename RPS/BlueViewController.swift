@@ -30,8 +30,8 @@ class BlueViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var om: RPS = RPS()
-        match.opponentMove = om;
+        //var om: RPS = RPS()
+        // match.opponentMove = om;
         
         // Do any additional setup after loading the view, typically from a nib.
     }
