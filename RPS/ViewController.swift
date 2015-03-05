@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
     var match:RPSMatch = RPSMatch()
 
     
