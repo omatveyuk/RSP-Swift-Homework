@@ -10,4 +10,6 @@ import UIKit
 class ColorTableViewCell: UITableViewCell {
     @IBOutlet weak var rightColorSquare: UIView!
     @IBOutlet weak var colorLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
 }

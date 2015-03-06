@@ -37,7 +37,8 @@ class ViewController: UIViewController {
         //match.opponentMove = om;
         match.playerMove = pm
         match.opponentMove = om
-        
+        // add to array
+        scores.append(match)
         blueViewController.match = match
         match.playerMove = pm;
         presentViewController(blueViewController, animated: true, completion: nil)
@@ -58,8 +59,10 @@ class ViewController: UIViewController {
             var pm: RPS = RPS.Paper
             var om: RPS = RPS()
             
-            match.playerMove = pm;
+            match.playerMove = pm
             match.opponentMove = om
+            // add to array for history table
+            scores.append(match)
            
             // assignment says that The second view controller should randomly select a move for the app
             //var om: RPS = RPS()

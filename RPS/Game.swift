@@ -65,7 +65,6 @@ struct RPSMatch{
     var playerMove: RPS = RPS.Rock
     var opponentMove: RPS = RPS.Rock
     
-    
     /*
     init(_pmove:RPS, _omove:RPS)
     {
