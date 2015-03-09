@@ -64,14 +64,14 @@ enum Outcome:Printable {
 struct RPSMatch{
     var playerMove: RPS = RPS.Rock
     var opponentMove: RPS = RPS.Rock
+    var timeStamp: NSDate!
     
-    /*
-    init(_pmove:RPS, _omove:RPS)
-    {
-    playerMove = _pmove;
-    opponentMove = _omove;
+    
+    init()
+    {   
+        timeStamp = NSDate()
     }
-    */
+    
 
     
     var description: String {

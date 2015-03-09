@@ -16,21 +16,25 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         return scores.count
     }
     
+    
+
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as ColorTableViewCell
-        println(scores.count)
-        println(indexPath.row.distanceTo(0))
+        println("My score array count is \(scores.count)");
+        println("Current row \(indexPath.row)")
+        println(scores.count - (indexPath.row+1))
         
-        // var idx = scores[scores.count - 1];
+        var idx = scores[scores.count - (indexPath.row+1)];
+        
         //let colorName = colorNames[indexPath.row]
         //cell.colorLabel.text = colorName
         
         //cell.backgroundColor = colors[colorName]
-        if scores[indexPath.row].outcome == Outcome.Win
+        if idx.outcome == Outcome.Win
         {
             cell.rightColorSquare.backgroundColor = UIColor.greenColor()// colors[colorName]
         }
-        else if (scores[indexPath.row].outcome == Outcome.Tie)
+        else if (idx.outcome == Outcome.Tie)
         {
             cell.rightColorSquare.backgroundColor = UIColor.yellowColor()
         }
@@ -41,8 +45,14 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         //cell.colorLabel.textColor = UIColor.whiteColor();
         // cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         //cell.textLabel!.textColor = colors[colorName];
-        cell.colorLabel.text = scores[indexPath.row].outcome.description
-        cell.descriptionLabel.text = scores[indexPath.row].description
+        
+        var dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = .ShortStyle
+        println(dateFormatter.stringFromDate(idx.timeStamp))
+        
+        cell.colorLabel.text = idx.timeStamp.description //idx.outcome.description
+        cell.descriptionLabel.text = idx.description
+        
         
         // cell.imageView
         // cell.detailTextLabel
@@ -54,8 +64,16 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         println(indexPath.row)
     }
     
+    /*
+    func insertNewObject(sender: AnyObject) {
+        objects.insertObject(NSDate(), atIndex: 0)
+        let indexPath = NSIndexPath(forRow: 0, inSection: 0)
+        self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+    }
+    */
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("My score array count is \(scores.count)");
+        
     }
 }
