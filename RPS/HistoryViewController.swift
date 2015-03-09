@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -47,10 +48,12 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         //cell.textLabel!.textColor = colors[colorName];
         
         var dateFormatter = NSDateFormatter()
-        dateFormatter.dateStyle = .ShortStyle
-        println(dateFormatter.stringFromDate(idx.timeStamp))
         
-        cell.colorLabel.text = idx.timeStamp.description //idx.outcome.description
+        let timestamp = NSDateFormatter.localizedStringFromDate(idx.timeStamp, dateStyle: .ShortStyle, timeStyle: .ShortStyle)
+        
+        // println(timestamp)
+        
+        cell.colorLabel.text = timestamp //idx.timeStamp.description //idx.outcome.description
         cell.descriptionLabel.text = idx.description
         
         
