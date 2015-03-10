@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         //match.opponentMove = om;
         match.playerMove = pm;
         match.opponentMove = om
+        match.timeStamp = NSDate()
         
         scores.append(match)
         
@@ -37,6 +38,8 @@ class ViewController: UIViewController {
         //match.opponentMove = om;
         match.playerMove = pm
         match.opponentMove = om
+        match.timeStamp = NSDate()
+
         // add to array
         scores.append(match)
         blueViewController.match = match
@@ -61,6 +64,8 @@ class ViewController: UIViewController {
             
             match.playerMove = pm
             match.opponentMove = om
+            match.timeStamp = NSDate()
+
             // add to array for history table
             scores.append(match)
            
